@@ -1,0 +1,570 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Kite+One&family=Rambla:ital,wght@0,700;1,700&family=Stardos+Stencil:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=IBM+Plex+Sans&family=Kite+One&family=Rambla:ital,wght@0,700;1,700&family=Stardos+Stencil:wght@700&display=swap");
+body{
+  width:100%;
+  margin:0px;
+}
+#body-head {
+  background-image: linear-gradient(
+      rgba(4, 9, 30, 0.233),
+      rgba(4, 9, 30, 0.568)
+    ),
+    url(Home.jpg);
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+ 
+#Heading {
+  margin-top: 15vh;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#Sportistan {
+  font-size: 6rem;
+  color: whitesmoke;
+  font-family: Dancing Script;
+  text-shadow: 0px 2px rgba(4, 243, 183, 0.973);
+}
+
+marquee {
+  font-family: sans-serif;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top:10.5vh;
+  font-size: 0.8rem;
+  color: yellow;
+}
+
+#Content1 {
+  margin-top: 3vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+aside {
+  width: fit-content;
+  height: fit-content;
+  border-right: 5px solid black;
+  display: inline;
+  vertical-align: top;
+  padding-right: 8vh;
+  border-bottom: 5px solid black;
+  border-radius: 25px;
+  font-family: roboto;
+}
+
+#left-aside-heading {
+  margin-top: 5vh;
+  margin-left: 5vh;
+  font-family: Rambla;
+  font-size: 1.6rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#left-aside-heading a {
+  color: #e41b1b;
+}
+.arrow {
+  transition: 0.5s ease-in-out 0.1s;
+}
+
+.arrow:hover {
+  color: blue;
+  transform: translateX(50px) rotate(90deg);
+}
+
+#aside-content {
+  line-height: 40px;
+  font-size: 1.4rem;
+  margin-left: 5vh;
+}
+
+.Box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card {
+  width: 300px;
+}
+
+.con1 {
+  width: 100%;
+  height: 60%;
+  border-radius: 15px;
+}
+
+.outer-div {
+  width: 19.5vw;
+  height: 13vw;
+  overflow: hidden;
+  min-width: 123px;
+  min-height: 82px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.inner-div {
+  width: 100%;
+  height: 100%;
+  /* background-color: black; */
+  background-position: center;
+  background-size: cover;
+  transition: all ease-in-out 0.3s;
+}
+.outer-div:hover .inner-div {
+  transform: scale(1.3);
+}
+.outer-div .inner-div span {
+  transform: scale(1);
+  transition: all ease-in-out 0.3s;
+}
+.outer-div:hover .inner-div span {
+  transform: scale(0.75);
+}
+.inner-div::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+}
+
+.inner-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.outer-div .inner-div span {
+  color: white;
+  font-size: 2vw;
+} 
+
+.Writting1 {
+  margin: 3px;
+  position: relative;
+  border-radius: 15px;
+  width: 100%;
+  height:200px;
+  font-family: "Lato", sans-serif;
+}
+
+.CHT-Games {
+  position: relative;
+  height: auto;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+
+.CHT-Games .outer-div:nth-child(1) .inner-div {
+  background-image: linear-gradient(
+      rgba(4, 9, 30, 0.233),
+      rgba(4, 9, 30, 0.568)
+    ),
+    url(sports-img/Cricket.jpeg);
+}
+
+.CHT-Games .outer-div:nth-child(2) .inner-div {
+  background-image: linear-gradient(
+      rgba(4, 9, 30, 0.233),
+      rgba(4, 9, 30, 0.568)
+    ),
+    url(sports-img/BAsketball.jpeg);
+}
+
+.CHT-Games .outer-div:nth-child(3) .inner-div {
+  background-image: linear-gradient(
+      rgba(4, 9, 30, 0.233),
+      rgba(4, 9, 30, 0.568)
+    ),
+    url(sports-img/badminton.jpeg);
+}
+.CHT-Games .outer-div:nth-child(4) .inner-div {
+  background-image: linear-gradient(
+      rgba(4, 9, 30, 0.233),
+      rgba(4, 9, 30, 0.568)
+    ),
+    url(sports-img/Football.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.CHT-Games .outer-div:nth-child(5) .inner-div {
+  background-image: linear-gradient(
+      rgba(4, 9, 30, 0.233),
+      rgba(4, 9, 30, 0.568)
+    ),
+    url(sports-img/volley.jpeg);
+}
+
+.CHT-Games .outer-div:nth-child(6) .inner-div {
+  background-image: linear-gradient(
+      rgba(4, 9, 30, 0.233),
+      rgba(4, 9, 30, 0.568)
+    ),
+    url(sports-img/tennis.jpeg);
+}
+
+#About {
+  background-color: rgb(197, 197, 197);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.inner-content {
+  margin-top: 10vh;
+  font-size: 1.5rem;
+  margin-bottom: 10vh;
+}
+
+.media-video {
+  margin-top: 15vh;
+  margin-left: 11vh;
+}
+
+.Features-content {
+  margin-top: 10vh;
+}
+.Features-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 5vh;
+}
+
+.FCR1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.FC1 {
+  padding-top: 6vh;
+}
+
+.FC1 p {
+  color: #464646;
+  font-family: Geomanist-Book;
+  margin-top: -2vh;
+}
+
+.Joining-Features {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 3vh;
+  background: rgb(197, 197, 197);
+  height: fit-content;
+}
+
+.Features-card {
+  margin-top: 2vh;
+  width: 300px;
+}
+
+.fcon1 {
+  width: 100%;
+  height: 60%;
+  border-radius: 50%;
+}
+
+.Sports {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  background: chocolate;
+  transition: 0.5s;
+  margin-bottom: 2vh;
+}
+
+#sports-head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 5vh;
+  align-items: center;
+  margin-left: 2vh;
+}
+
+#sports-head .logo {
+  position: relative;
+  font-size: 4rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.sports-content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2vh;
+}
+.sports-content .sports-text {
+  position: relative;
+  max-width: 600px;
+}
+.sports-content .sports-text h2 {
+  color: white;
+  padding-top: 10vh;
+  font-size: 3em;
+  line-height: 1.5em;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.sports-content .sports-text h2 span {
+  font-size: 2em;
+}
+.sports-content .sports-text p {
+  color: white;
+}
+.sports-content .sports-text a {
+  display: inline-block;
+  margin-top: 3vh;
+  padding: 8px 20px;
+  background: white;
+  color: black;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.sImg {
+  width: 80vh;
+  margin-top: 5vh;
+  margin-right: 5vh;
+}
+.sports-content .sports-img {
+  padding-top: 5vh;
+}
+.sports-content .sports-img img {
+  max-width: 140px;
+  height: 50px;
+}
+
+.thumb {
+  position: absolute;
+  left: 50%;
+  margin-top: 85vh;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.thumb li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.thumb li img {
+  max-width: 80px;
+  border-radius: 10px;
+}
+.MainImg {
+  max-width: 50px;
+  border-radius: 10px;
+}
+
+.thumb li:hover {
+  transform: translateY(-15px);
+}
+
+#Membership {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: rgb(197, 197, 197);
+}
+
+.contactform {
+  width: 30%;
+  padding: 2vh;
+  height: 20%;
+  background: white;
+  opacity: 0.9;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  font-family: roboto;
+}
+.contactform h2 {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 500;
+}
+.contactform .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 2vh;
+}
+.contactform .inputBox input,
+.contactform .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+.contactform .inputBox input:hover,
+.contactform .inputBox textarea:hover {
+  border-bottom: 2px solid blue;
+}
+
+.contactform .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.Sbutton {
+  background-color: red;
+  color: white;
+  padding: 7px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  position: right;
+  width: 20vh;
+}
+.Sbutton:hover {
+  box-shadow: 0px 0px 5px black;
+  cursor: pointer;
+}
+
+.contactform .inputBox input:focus ~ span,
+.contactform .inputBox input:valid ~ span,
+.contactform .inputBox textarea:focus ~ span,
+.contactform .inputBox textarea:valid ~ span {
+  color: blue;
+  font-size: 1rem;
+  transform: translateY(-20px);
+}
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  color: #e41b1b;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("Project\ Logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer > * {
+  flex: 30%;
+}
+
+.footer__logo {
+  font-family: sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: red;
+  font-size: 32px;
+}
+
+.footer__addr h2 {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+}
+
+.footer address {
+  font-style: normal;
+  color: #999;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100px;
+  background-color: rgb(238, 10, 10);
+  border-radius: 100px;
+  color: #cdcfd6;
+  font-size: 17px;
+  size: 30px;
+  text-decoration: none;
+}
+.footer__btn:hover {
+  background-color: blue;
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  margin: 2% 1%;
+  box-sizing: border-box;
+  height: 80vh;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box:hover {
+  flex: 1 1 30%; /* flex : flexgrow flexShrink flexbasis */
+}
+
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
